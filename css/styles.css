@@ -1,0 +1,126 @@
+html,
+body{
+    margin: 0;
+    color: #fff;
+    font: sans-serif;
+}
+body{
+     padding: 10px; 
+}
+
+.navbar li{
+    list-style: none;
+    display: block;
+}
+.navbar li a{
+    padding: 20px;
+    text-decoration: none;
+    color: #fff; font-size: 22px;    
+    font-weight: 600;
+}
+.navbar li a:hover{
+  background: #000;
+    color: #fff;
+}
+.footer-menu {
+    width:100%;
+    height: auto;
+    background:linear-gradient(120deg, #f777,#f14,#faa);
+    padding: 100px;
+}
+
+.footer-menu li{
+     list-style: none;
+}
+.footer-menu li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+}
+.footer-menu li a:hover{
+     color: deepskyblue;
+}
+.post-container{
+   margin-top: -50px; background:linear-gradient(90deg, #aa0,#0aaf,#ff0aaa);
+    transition: all 1s ease;
+}
+.post-container:hover{background:#fff;}
+.post-container .index-content,img{
+    color: #000;
+    font-weight: 600;
+    box-shadow: 0 0 5px 2px;
+}
+.sidebar li {list-style: none; color: #fff;}
+.starwar-sidebar{
+    overflow-y: scroll;
+    position: fixed;
+    height: 100vh;
+    width: 350px;
+    top:30px;
+    right: 0;
+    background: #111;
+    z-index: 10;
+    display: none;
+    color: aqua;
+}
+
+.starwar-sidebar #sidebar{
+    padding: 10px;
+    font-size: 26px;
+    font-weight: 600;
+    background: #fff;
+    cursor: pointer;
+}
+.sidebar-scroll{
+    padding: 20px;
+    
+}
+ #toggle{
+     position: absolute;
+       right: 10px;
+     z-index: 10;
+     cursor: pointer;
+}
+#navi-toggler{
+    position: absolute;
+    display: none;
+}
+@media (max-width:700px){
+    #navigation .navbar{
+        display: none;
+    }
+    #navi-toggler{
+            position: absolute;
+            display: block;
+}
+    .post-container{
+   margin-top:30px;
+}
+    .navbar{
+        display: flex;
+        flex-direction: column;
+    } 
+    .navbar ul li {
+        margin: 5px auto;
+        padding: 5px;
+    }
+}
+.starwar-sidebar .sidebar-scroll li{
+  list-style-type: none;
+   
+}
+.contact-sidebar{
+        right: 10px; 
+}
+.contact-widget{
+    padding:10px;
+    list-style: none;
+    width:250px;
+    
+}
+.widget{
+    margin-bottom: 50px;
+    border-bottom: 2px ;
+    text-align: center;
+}
+.calendar_wrap #wp-calendar{color: blue; margin-left: 60px;}
